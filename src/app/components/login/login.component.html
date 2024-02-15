@@ -16,9 +16,9 @@
         <small *ngIf="password.invalid && (password.dirty || password.touched)" class="block p-error">
             <div *ngIf="password.hasError('required')">Se requiere contraseña</div>
         </small>
-        <p-button label="Ingresar" class="w-full" [disabled]="loginForm.invalid"></p-button>
+        <p-button label="Ingresar" class="w-full" [disabled]="loginForm.invalid" ></p-button>
         <div class="mt-2">
-            ¿Ya tiene una cuenta? <a routerLink="/registro">Regístrate</a>
+            ¿No tienes cuenta? <a routerLink="/registro">Regístrate</a>
         </div>
         
     </p-card>
